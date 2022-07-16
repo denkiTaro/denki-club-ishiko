@@ -1,0 +1,87 @@
+@import '../../../_media-query.scss';
+
+.news {
+  margin: 0 auto;
+  padding: 150px 0;
+
+  h1 {
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 6px;
+
+    @include mp {
+      font-size: 40px;
+    }
+  }
+
+  &-cardBox {
+    margin-bottom: 55px;
+    .newsCard:nth-of-type(4) {
+      border-bottom: 1px solid #333;
+    }
+  }
+
+  & .moreBtn span {
+    color: #000000;
+  }
+}
+
+.newsCard {
+  min-height: 100px;
+  height: auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 22px;
+  border-top: 1px solid #333;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  @include mp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  span {
+    letter-spacing: 2px;
+    color: #000000;
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &-date {
+    font-size: 30px;
+    margin-right: 33px;
+
+    @include mp {
+      font-size: 1rem;
+    }
+  }
+
+  &-forEvent {
+    padding: 5px 10px;
+    margin-right: 49px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mp {
+      font-size: 10px;
+    }
+  }
+
+  &-text {
+    display: inline-block;
+    max-width: 600px;
+  }
+}

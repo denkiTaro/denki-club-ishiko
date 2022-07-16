@@ -1,0 +1,123 @@
+.header {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: #333;
+  z-index: 300;
+}
+
+.header-main {
+  visibility: visible;
+  width: 100%;
+  height: 150px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .header-main {
+    height: auto;
+    padding: 16px;
+  }
+}
+
+.header-main-img {
+  width: 50%;
+  text-decoration: none;
+}
+
+.header-main-img img {
+  width: 15%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .header-main-img img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .header-main-btns {
+    display: none;
+  }
+}
+
+.header-main-btns a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 45px;
+  cursor: pointer;
+}
+
+.header-main-btns span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 45px;
+  cursor: pointer;
+}
+
+.header-main-burger {
+  display: none;
+  position: relative;
+  min-width: 40px;
+  width: 40px;
+  height: 34px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .header-main-burger {
+    display: block;
+  }
+}
+
+.header-main-burger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.header-main-burger span:nth-of-type(1) {
+  top: 0;
+}
+
+.header-main-burger span:nth-of-type(2) {
+  top: 15px;
+}
+
+.header-main-burger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.header-menu {
+  color: white;
+  font-size: 2rem;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 32px 16px;
+  margin: -1px 0;
+}
+/*# sourceMappingURL=Header.css.map */

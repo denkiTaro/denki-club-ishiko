@@ -1,0 +1,65 @@
+.movies {
+  margin: 260px 0 150px 0;
+
+  h1 {
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 6px;
+
+    @include mp {
+      font-size: 40px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: #333;
+      margin: 0 auto;
+    }
+  }
+
+  &-box {
+    min-height: 425px;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(177, 177, 177);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mp {
+      flex-direction: column;
+    }
+
+    &-movie {
+      position: relative;
+      height: 278px;
+      width: 494px;
+      margin: 5px;
+      background: black;
+      z-index: 100;
+
+      @include mp {
+        width: 280px;
+        height: 200px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+        opacity: 0.5;
+        z-index: 200;
+      }
+    }
+  }
+}

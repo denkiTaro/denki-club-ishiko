@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: YuGothic, 'Yu Gothic', Arial,sans-serif;
+}
+
+body h1,
+body h2,
+body p {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

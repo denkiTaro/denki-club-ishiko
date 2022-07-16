@@ -1,0 +1,133 @@
+.HINAGATAContainer, h1, body {
+  padding: 0;
+  margin: 0;
+}
+
+.HINAGATAContainer a {
+  text-decoration: none;
+}
+
+.HINAGATAContainer * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* outline: solid .1px rgba(255, 0, 0, 0.336); */
+  font-family: 'Yu Gothic';
+}
+
+.hinagata-img-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.borderHeader {
+  height: 7.5vw;
+  background: black;
+}
+
+.HINAGATAContainer {
+  width: 100%;
+  /* padding-top: 6vw; */
+  padding-bottom: 6vw;
+  background: rgba(185, 185, 185, 0.185);
+}
+
+.HINAGATAContainer .HINAGATABody {
+  width: 80vw;
+  margin: auto;
+  margin-top: 250px;
+  padding: 6vw 3.5vw 8vw 3.5vw;
+  background: white;
+}
+
+.HINAGATAHeaderContainer {
+  border-bottom: solid 1px;
+}
+
+.HINAGATAHeaderContainer .HINAGATATitle {
+  font-size: 24px;
+  padding-bottom: 8px;
+  letter-spacing: 6px;
+}
+
+.HINAGATAHeaderContainer .lastUpdate {
+  padding-bottom: 1.5vw;
+}
+
+.HINAGATAMain {
+  border-bottom: 1px solid;
+}
+
+.HINAGATAMain .HINAGATAImgContainer {
+  height: 400px;
+  /* max-width: 750px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3.2vw 0 3.5em 0;
+  border: 1px solid;
+}
+
+.HINAGATAMain .HINAGATAImgContainer img {
+  width: auto;
+  height: 100%;
+}
+
+.HINAGATAMain .articleText {
+  line-height: 30px;
+  letter-spacing: 9px;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 780px) {
+  .HINAGATAMain .HINAGATAImgContainer {
+    max-height: 450px;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .HINAGATAMain .HINAGATAImgContainer img {
+    width: 100%;
+    height: auto;
+  }
+  .HINAGATAMain .articleText {
+    line-height: 24px;
+    letter-spacing: 7.2px;
+    font-size: 14.4px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .HINAGATAContainer {
+    /* padding-top: 56px; */
+    padding-bottom: 80px;
+  }
+  .HINAGATAHeaderContainer .HINAGATATitle {
+    font-size: 22px;
+    padding-bottom: 3px;
+  }
+  .HINAGATAHeaderContainer .lastUpdate {
+    padding-bottom: 18px;
+  }
+  .HINAGATAContainer .HINAGATABody {
+    width: 100%;
+    padding: 80px 28px 80px 28px;
+  }
+  .HINAGATAMain .HINAGATAImgContainer {
+    max-height: 284px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .HINAGATAMain .articleText {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=Hinagata.css.map */

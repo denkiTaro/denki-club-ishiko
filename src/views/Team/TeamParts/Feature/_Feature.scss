@@ -1,0 +1,64 @@
+.feature {
+  max-width: 1200px;
+  margin: 260px auto 0 auto;
+
+  h1 {
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 6px;
+
+    @include mp {
+      font-size: 40px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: #333;
+      margin: 0 auto;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+
+    @include mp {
+      flex-direction: column;
+    }
+
+    &-card {
+      height: 500px;
+      width: 360px;
+      padding: 50px;
+      border: black 1px solid;
+
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      @include mp {
+        width: 100%;
+        margin-bottom: -1px;
+      }
+
+      &-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 1px solid #333;
+
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      p {
+        margin-top: 8px;
+      }
+    }
+  }
+}

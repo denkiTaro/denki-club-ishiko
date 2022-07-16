@@ -1,0 +1,62 @@
+@import '../../../_media-query.scss';
+
+.member {
+  padding: 150px 0;
+
+  h1 {
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 6px;
+
+    @include mp {
+      font-size: 40px;
+    }
+  }
+
+  &-card {
+    display: flex;
+
+    @include mp {
+      display: block;
+    }
+  }
+}
+
+.memCard {
+  width: calc(100% / 3);
+  padding: 5% 0;
+  background: #141414;
+  border: 1px solid white;
+
+  color: white;
+
+  @include mp {
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0 0 3% 0;
+    font-size: 50px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    @include mp {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto 35px auto;
+    font-size: 32px;
+    text-align: center;
+    overflow-wrap: break-word;
+
+    color: white;
+
+    @include mp {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../_media-query.scss';
+
+.moreBtn {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    height: 85px;
+    width: 254px;
+    border: 2px solid #00c4ff;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mp {
+      height: 60px;
+      width: 150px;
+      font-size: 20px;
+    }
+  }
+}

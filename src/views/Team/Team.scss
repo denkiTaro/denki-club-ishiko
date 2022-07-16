@@ -1,0 +1,53 @@
+@import './TeamParts/About/_About.scss';
+@import './TeamParts/Feature/_Feature.scss';
+@import './TeamParts/Movies/_Movies.scss';
+@import '../../_media-query.scss';
+
+.team {
+  &-img {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include mp {
+      height: 600px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: black;
+      height: 100%;
+      width: 100%;
+      opacity: 0.4;
+      z-index: 100;
+    }
+
+    h2 {
+      position: relative;
+      margin: 0 0 50px 100px;
+      color: white;
+      font-size: 80px;
+      z-index: 200;
+
+      @include mp {
+        margin: 0 0 25px 50px;
+        font-size: 60px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        height: 80%;
+        width: 20px;
+        background: white;
+      }
+    }
+  }
+}
